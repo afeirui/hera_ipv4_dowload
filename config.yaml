@@ -1,0 +1,32 @@
+ipv4_tcp_listener_address: [":7777",":17323"]
+ipv6_tcp_listener_address: [":3000",":5000",":7000"]
+log_dir: /home/hera_ipv4/log
+local_ip: 103.7.117.2
+process_name: hera
+open_shadowsocks: true
+shadowsocks_address: :7778
+redis:
+  addr: 127.0.0.1:6379
+  password: SDRF34i5c67bnj
+  db: 0
+  min_idle_conns: 30
+  max_idle_conns: 500
+  pool_size: 300
+rabbitmq:
+  host: 47.237.124.32
+  port: 5672
+  user: NUHIr56ct78b
+  password: gBYUGyub7vcv
+  virtualhost: "/"
+  blacklist_exchange: blacklist_exchange
+  blacklist_accesslog_queue: BlacklistRecordsQueue
+  accesslog_to_influxdb_queue: AccessRecordsToInfluxDBQueue
+nacos:
+  url: 8.222.155.93
+  port: 8848
+  namespace_id: 164337a9-51e9-4383-b504-6610e7e05068
+  ipv4_group_name: static_ipv4
+  ipv6_group_name: static_ipv6
+  user: nacos
+  password: HO*nEmn*#@Ra
+  local_ip: 103.7.117.2
